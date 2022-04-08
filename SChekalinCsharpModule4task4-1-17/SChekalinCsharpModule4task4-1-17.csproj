@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>SChekalinCsharpModule4task4_1_17</RootNamespace>
+  </PropertyGroup>
+
+</Project>
