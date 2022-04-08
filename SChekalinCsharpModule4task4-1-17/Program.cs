@@ -7,9 +7,10 @@ namespace SChekalinCsharpModule4task4_1_17
 		static void Main(string[] args)
 		{
 			var arr = new int[] {5,6,9,1,2,3,4};
-			for (int i = 0; i < arr.Length-1; i++)
+			var sum = 0;
+			for (int i = 0; i < arr.Length; i++)
             {
-				for (int j = i+1; j < arr.Length; j++)
+				/*for (int j = i+1; j < arr.Length; j++)
                 {
 					if (arr[j] < arr[i])
                     {
@@ -17,10 +18,11 @@ namespace SChekalinCsharpModule4task4_1_17
 						arr[j] = arr[i];
 						arr[i] = temp;
 					}
-                }
+                }*/
+				sum += arr[i];
             }
-			foreach (int i in arr)
-				Console.Write(i);
+			//foreach (int i in arr)
+			Console.Write(sum);
 		}
 	}
 }
