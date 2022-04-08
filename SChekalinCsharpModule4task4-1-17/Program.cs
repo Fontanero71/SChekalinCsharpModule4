@@ -6,14 +6,21 @@ namespace SChekalinCsharpModule4task4_1_17
 	{
 		static void Main(string[] args)
 		{
-			int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
-			for (int i = 0; i<array.GetUpperBound(1) + 1; i++) 
-			{
-				for (int k = 0; k<array.GetUpperBound(0) + 1; k++)
-				Console.Write(array[k, i] + " ");
-
-				Console.WriteLine();
-			}
+			var arr = new int[] {5,6,9,1,2,3,4};
+			for (int i = 0; i < arr.Length-1; i++)
+            {
+				for (int j = i+1; j < arr.Length; j++)
+                {
+					if (arr[j] < arr[i])
+                    {
+						int temp = arr[j];
+						arr[j] = arr[i];
+						arr[i] = temp;
+					}
+                }
+            }
+			foreach (int i in arr)
+				Console.Write(i);
 		}
 	}
 }
